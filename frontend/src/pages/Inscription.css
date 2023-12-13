@@ -1,0 +1,27 @@
+.body {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.taille {
+  width: 45em;
+  height: 2.5em;
+}
+
+.signup {
+  background-color: #065289;
+  color: white;
+  height: 4em;
+  width: 10em;
+  font-size: 1.5em;
+}
+
+.bordure {
+  border-bottom: 3px solid black;
+}
+
+.sign {
+  font-size: 2.5em;
+}
