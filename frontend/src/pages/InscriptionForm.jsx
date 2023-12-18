@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "./Inscription.css";
 
 function InscriptionForm() {
@@ -90,6 +91,9 @@ function InscriptionForm() {
         <br />
         <input type="submit" className="signup" value="S'inscrire" />
       </form>
+      <Link to="/">
+        <h1>Retour à l'accueil</h1>
+      </Link>
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ContactForm from "./pages/ContactForm";
-import InscriptionForm from "./pages/InscriptionForm";
 
 function App() {
   const [setContacts] = useState([]);
@@ -14,7 +13,12 @@ function App() {
   return (
     <div className="App">
       <ContactForm onAddContact={addContact} />
-      <InscriptionForm />
+      <Link to="/InscriptionForm">
+        <h1>S'inscrire</h1>
+      </Link>
+      <Link to="/ContactForm">
+        <h1>Ajouter des contacts</h1>
+      </Link>
     </div>
   );
 }
