@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { Link } from "react-router-dom";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -109,6 +110,9 @@ function ContactForm() {
             ))}
           </ul>
         </div>
+        <Link to="/">
+          <h1>Retour à l'accueil</h1>
+        </Link>
       </div>
     </form>
   );

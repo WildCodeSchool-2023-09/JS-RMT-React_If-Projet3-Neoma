@@ -10,10 +10,10 @@ const router = express.Router();
 const userControllers = require("./controllers/userControllers");
 
 // Route to get a list of items
-// router.get("/user", userControllers.browse);
+router.get("/user", userControllers.browse);
 
 // Route to get a specific item by ID
-// router.get("/user/:id", userControllers.read);
+router.get("/user/:id", userControllers.read);
 
 // Route to add a new item
 router.post("/signup", userControllers.add);
