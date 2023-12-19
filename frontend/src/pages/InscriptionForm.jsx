@@ -1,3 +1,5 @@
+// InscriptionForm.jsx
+
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -35,11 +37,6 @@ function InscriptionForm() {
 
   return (
     <div className="body">
-      <h1 className="titreContact">Votre annuaire privé</h1>
-      <h2 className="phraseContact">
-        Un accès facile à tous vos contacts en un seul clic
-      </h2>
-      <p className="sign">Inscrivez-vous pour obtenir votre page privée </p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="nom">Nom :</label> <br />
         <input
@@ -89,10 +86,12 @@ function InscriptionForm() {
         />
         <br />
         <br />
-        <input type="submit" className="signup" value="S'inscrire" />
+        <button type="submit" className="signup-button">
+          S'inscrire
+        </button>
       </form>
-      <Link to="/">
-        <h1>Retour à l'accueil</h1>
+      <Link to="/" className="retour-accueil">
+        Retour à l'accueil
       </Link>
     </div>
   );

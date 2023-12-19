@@ -1,53 +1,72 @@
-.titreContact {
-  color: #065289;
-  background-color: #97b6ccc2;
-  margin-right: 35%;
-  margin-left: 35%;
-  font-size: 3rem;
-}
+/* Inscription.css */
 
-.formulaire {
-  display: flex;
-  flex-direction: column;
-  width: 37em;
-  margin: 0 auto;
-  margin-top: 3rem;
+.titreContact {
+  color: #333;
+  text-align: center;
 }
 
 .phraseContact {
-  background-color: #065289;
-  border-radius: 8rem;
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 3rem;
-  font-size: 2rem;
-  color: white;
+  color: #666;
+  text-align: center;
+}
+
+.formulaire {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-  margin-top: 2rem;
-  font-size: 2rem;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 input {
-  border-radius: 5px;
-  height: 2rem;
-  background-color: #ffffff;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
 .ajouter {
-  margin-top: 2rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  font-size: 1.3rem;
-  background-color: #065289;
+  background-color: #4caf50;
   color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.ajouter:hover {
+  background-color: #45a049;
 }
 
 .liste_contact {
-  font-size: 2rem;
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+.liste_contact li {
+  margin: 10px 0;
+}
+
+h2 {
+  color: #007bff;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+h1:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
