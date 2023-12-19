@@ -38,10 +38,6 @@ function ContactForm() {
 
   return (
     <form>
-      <h1 className="titreContact">Votre annuaire privé</h1>
-      <h2 className="phraseContact">
-        Un accès facile à tous vos contacts en un seul clic
-      </h2>
       <div className="formulaire">
         <label htmlFor="firstName">Nom:</label>
         <input
