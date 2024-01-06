@@ -1,0 +1,43 @@
+/* List.css */
+.ContactList {
+    /* Ajoutez des styles pour la div englobante ici */
+  }
+  
+  .contact {
+    /* Ajoutez des styles pour chaque contact ici */
+    padding: 6px;
+  }
+  
+  .contact table {
+    /* Ajoutez des styles pour la table à l'intérieur du contact ici */
+    width: 100%
+    border-collapse: collapse; /* Pour fusionner les bordures des cellules */
+  }
+  
+  .contact th, .contact td {
+    /* Ajoutez des styles pour les en-têtes et les cellules */
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Définissez des largeurs de colonnes fixes */
+  .contact th:nth-child(1),
+  .contact td:nth-child(1) {
+    width: 150px /* Par exemple, 20% de la largeur totale */
+  }
+  
+  .contact th:nth-child(2),
+  .contact td:nth-child(2) {
+    width: 20%;
+  }
+  
+  .contact th:nth-child(3),
+  .contact td:nth-child(3) {
+    width: 30%;
+  }
+  
+  .contact th:nth-child(4),
+  .contact td:nth-child(4) {
+    width: 40%; /* Utilisez une largeur plus grande pour la dernière colonne */
+  }
+  
