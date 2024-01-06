@@ -1,0 +1,19 @@
+-- SQLBook: Code
+
+CREATE TABLE user (
+  IDUtilisateur INT AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(255) NOT NULL,
+  prenom VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  mdp VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Contact(
+  IDcontact INT AUTO_INCREMENT PRIMARY KEY,
+  nom VARCHAR(255) NOT NULL,
+  prenom VARCHAR(255),
+  Tel VARCHAR(50),
+  email VARCHAR(255),
+  IDUtilisateur INT NOT NULL,
+  FOREIGN KEY(IDUtilisateur) REFERENCES user(IDUtilisateur)
+);
